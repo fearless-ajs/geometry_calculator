@@ -17,13 +17,16 @@ trait GeometryServiceProvider
 
     function calculateAreaOfCircle($radius): float|int
     {
-        $area = pi() * $radius * $radius;
-        return $area;
+        return pi() * $radius * $radius;
     }
 
     public function calculateCircumferenceOfCircle($radius): float|int
     {
-        $cir = 2*pi()*$radius;
-        return $cir;
+        return 2*pi()*$radius;
+    }
+
+    public function calculateDiamtereOfCircle($radius): float|int
+    {
+        return 2*$radius;
     }
 }
